@@ -11,7 +11,9 @@ set :user, 'samstarling'
 
 desc "Deploys the current version to the server."
 task :deploy do
-  invoke :'git:clone'
-  invoke :'bundle:install'
-  command "bundle exec nanoc"
+  deploy do
+    invoke :'git:clone'
+    invoke :'bundle:install'
+    command "bundle exec nanoc"
+  end
 end
