@@ -1,5 +1,5 @@
 require 'mina/bundler'
-require 'mina/rails'
+require 'mina/deploy'
 require 'mina/git'
 
 set :domain, '139.162.213.166'
@@ -10,10 +10,8 @@ set :branch, 'master'
 set :user, 'samstarling'
 
 desc "Deploys the current version to the server."
-task :deploy => :environment do
-  deploy do
-    invoke :'git:clone'
-    invoke :'bundle:install'
-    queue "#{bundle_prefix} nanoc"
-  end
+task :deploy do
+  invoke :'git:clone'
+  invoke :'bundle:install'
+  command "bundle exec nanoc"
 end
