@@ -30,6 +30,8 @@ p, li {
   float: left;
   padding-right: 0.9em;
   padding-bottom: 0.9em;
+  width: 80px;
+  height: 80px;
 }
 
 .HomeHeading {
