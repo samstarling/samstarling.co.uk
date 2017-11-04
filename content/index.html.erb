@@ -1,0 +1,21 @@
+---
+title: Sam Starling
+---
+
+<h1>Sam Starling</h1>
+
+<p>Hello, I'm Sam – a freelance software engineer based in Berlin, Germany. I have a wide range of experience, from backend to frontend, across a variety of languages and technologies. Most recently, I've been working with Scala and Ruby. <a href="mailto:hello@samstarling.co.uk">Let's talk about how I could help you</a>.</p>
+
+<p>I'm also on <a href="http://twitter.com/samstarling">Twitter</a>, <a href="http://linkedin.com/in/samstarling">LinkedIn</a> and <a href="http://github.com/samstarling">GitHub</a>.
+
+<h2 class="HomeHeading">Posts</h2>
+<ul class="PostList">
+<% sorted_articles.each do |post| %>
+  <li><%= link_to(post[:title], post) %> <span class="PostList--date">&middot; <%= post[:date] %></span></li>
+<% end %>
+</ul>
+
+<h2 class="HomeHeading">Projects</h2>
+<ul>
+  <li><a href="https://github.com/samstarling/finagle-prometheus">finagle-prometheus</a></li>
+</ul>

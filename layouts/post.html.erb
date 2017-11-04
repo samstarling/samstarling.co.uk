@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= item[:title] %> &middot; Sam Starling</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+    <div id="main">
+      <p><a href="/">&larr; Home</a></p>
+      <div class="PostHeading">
+        <h1 class="PostHeading--title"><%= item[:title] %></h1>
+        <div class="PostHeading--date"><%= item[:date] %></div>
+      </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>
