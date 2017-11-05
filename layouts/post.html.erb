@@ -12,7 +12,7 @@
       <p><a href="/">&larr; Home</a></p>
       <div class="PostHeading">
         <h1 class="PostHeading--title"><%= item[:title] %></h1>
-        <div class="PostHeading--date"><%= item[:date] %></div>
+        <div class="PostHeading--date"><%= friendly_date_for(item) %></div>
       </div>
       <%= yield %>
     </div>

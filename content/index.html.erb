@@ -10,7 +10,7 @@ title: Sam Starling
 <h2 class="HomeHeading">Posts</h2>
 <ul class="PostList">
 <% sorted_articles.each do |post| %>
-  <li><%= link_to(post[:title], post) %> <span class="PostList--date">&middot; <%= post[:date] %></span></li>
+  <li><%= link_to(post[:title], post) %> <span class="PostList--date">&middot; <%= friendly_date_for(post) %></span></li>
 <% end %>
 </ul>
 
