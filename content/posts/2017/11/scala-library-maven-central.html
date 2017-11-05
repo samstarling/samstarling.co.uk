@@ -1,0 +1,25 @@
+---
+title: Publishing Scala libraries to Maven Central
+created_at: 2017-11-05 00:00:00
+kind: article
+---
+
+<p>As part of my recent work on finagle-prometheus, one of the things I wanted to do was to get the library in Maven Central. This makes it more user-friendly, as it means that you don't have to add a new resolver to your project.</p>
+
+<p>However, doing so was pretty tricky, so I thought it'd be worth writing it down for the benefit of others. The process looks a bit like this:</p>
+
+<ol>
+  <li>Release the project.</li>
+  <li>Publish artifacts to Bintray</li>
+  <li>Have Bintray sync the artifacts to Maven Central</li>
+</ol>
+
+<h3>Prerequisites</h3>
+<p>You'll need:</p>
+<ol>
+  <li>A <a href="https://bintray.com/signup">Bintray account</a>, with a Maven repository configured.</li>
+</ol>
+
+<h3>Release the project</h3>
+<p>I use the <a href="https://github.com/sbt/sbt-release">sbt-release</a> plugin for this, with the default settings. It works really well.</p>
+<p>At this point, it's also worth thinking about whether you need to <a href="http://www.scala-sbt.org/1.x/docs/Cross-Build.html">cross-build</a> for different Scala versions.</p>
