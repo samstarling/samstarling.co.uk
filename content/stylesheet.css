@@ -17,12 +17,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-h2, h3, h4, h5, h6 {
-  font-weight: 500;
+h3, h4, h5, h6 {
+  font-weight: 700;
 }
 
 p, li {
   line-height: 1.5;
+}
+
+li {
+  padding: 0.2em 0 0.25em 0;
 }
 
 .ProfileImage {
