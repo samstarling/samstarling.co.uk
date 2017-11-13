@@ -5,8 +5,9 @@ compile '/posts/**/*.html' do
   write item.identifier.without_ext + '/index.html'
 end
 
-compile '/**/*.html' do
-  layout '/default.*'
+compile '/til/**/*.html' do
+  layout '/til.*'
+  write item.identifier.without_ext + '/index.html'
 end
 
 compile '/**/*.erb' do
@@ -14,15 +15,24 @@ compile '/**/*.erb' do
   layout '/default.*'
 end
 
-route '/**/*.{html,md,erb}' do
-  if item.identifier =~ '/index.*'
+compile '/**/*.html' do
+  layout '/default.*'
+end
+
+route '/**/*.{html,md,erb,html}' do
+
+  x = if item.identifier =~ '/index.*'
     '/index.html'
   else
     item.identifier.without_ext + '/index.html'
   end
+
+  puts [item, x].inspect
+
+  x
 end
 
-compile '/**/*' do
+compile '/**/*.{css,js}' do
   write item.identifier.to_s
 end
 
