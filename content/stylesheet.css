@@ -4,6 +4,9 @@ body {
   padding: 0 20px;
   font-size: 18px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
