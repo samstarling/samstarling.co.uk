@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title><%= title_tag(item) %></title>
-    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
     <meta name="google-site-verification" content="H_FiFYlDsR8MHqDJL9fFo06j_h0Wj4gzfTvxrFYTBYg" />
   </head>
-  <body>
-    <div id="main">
+  <body class="sans-serif w-100 black-70">
+    <div class="pa3 ph5-ns">
       <%= yield %>
     </div>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109282190-1"></script>

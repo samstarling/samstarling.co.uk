@@ -1,8 +1,8 @@
 <% render '/_base.*' do %>
-  <p><a href="/til">&larr; TIL</a></p>
-  <div class="PostHeading">
-    <h1 class="PostHeading--title"><%= item[:title] %></h1>
-    <div class="PostHeading--date"><%= friendly_date_for(item) %></div>
+  <p><a href="/til">&larr; Home</a></p>
+  <h1 class="f1 mb1"><%= item[:title] %></h1>
+  <div class="f3 mb4 black-50"><%= friendly_date_for(item) %></div>
+  <div class="f5 f4-ns lh-copy measure">
+    <%= yield %>
   </div>
-  <%= yield %>
 <% end %>

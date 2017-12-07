@@ -1,17 +1,27 @@
-<h1>Sam Starling</h1>
+<h1 class="f1">Sam Starling</h1>
 
-<p><img class="ProfileImage" src="https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=80" srcset="https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=80 1x, https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=160 2x, https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=240 3x" />  Hello, I'm Sam &mdash; a freelance software engineer based in Berlin, Germany. I have a wide range of experience, from backend to frontend, across a variety of languages and technologies.</p>
-<p>I'm looking for new projects at the moment, so <a href="mailto:hello@samstarling.co.uk">let's talk about how I could help you</a>. I'm also on <a href="http://twitter.com/samstarling">Twitter</a>, <a href="http://linkedin.com/in/samstarling">LinkedIn</a> and <a href="http://github.com/samstarling">GitHub</a>.
-<p>I'm blogging about things I learn on my <a href="/til">TIL</a> page.</p>
+<div class="f5 f4-ns lh-copy measure">
+  <div class="w-100 cf">
+    <div class="fl pr3 w-30">
+      <img class="w-100" src="https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=80" srcset="https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=80 1x, https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=160 2x, https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=240 3x" />
+    </div>
+    <div class="fl w-70">
+      Hello, I'm Sam &mdash; a freelance software engineer based in Berlin, Germany. I have a wide range of experience, from backend to frontend, across a variety of languages and technologies.
+    </div>
+  </div>
 
-<h2 class="HomeHeading">Posts</h2>
-<ul class="PostList">
-<% sorted_articles.each do |post| %>
-  <li><%= link_to(post[:title], post) %> <span class="PostList--date">&middot; <%= friendly_date_for(post) %></span></li>
-<% end %>
-</ul>
+  <p>I'm looking for new projects at the moment, so <a href="mailto:hello@samstarling.co.uk">let's talk about how I could help you</a>. I'm also on <a href="http://twitter.com/samstarling">Twitter</a>, <a href="http://linkedin.com/in/samstarling">LinkedIn</a> and <a href="http://github.com/samstarling">GitHub</a>.
+  <p>I'm blogging about things I learn on my <a href="/til">TIL</a> page.</p>
 
-<h2 class="HomeHeading">Projects</h2>
-<ul>
-  <li><a href="https://github.com/samstarling/finagle-prometheus">finagle-prometheus</a></li>
-</ul>
+  <h2>Posts</h2>
+  <ul>
+  <% sorted_articles.each do |post| %>
+    <li><%= link_to(post[:title], post) %> <span class="black-40">&middot; <%= friendly_date_for(post) %></span></li>
+  <% end %>
+  </ul>
+
+  <h2>Projects</h2>
+  <ul>
+    <li><a href="https://github.com/samstarling/finagle-prometheus">finagle-prometheus</a></li>
+  </ul>
+</div>
