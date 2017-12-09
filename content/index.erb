@@ -16,7 +16,7 @@
   <h2>Posts</h2>
   <ul>
   <% sorted_articles.each do |post| %>
-    <li><%= link_to(post[:title], post) %> <span class="black-40">&middot; <%= friendly_date_for(post) %></span></li>
+    <li><%= link_to(post[:title], post) %> <span class="black-40">&middot; <%= friendly_date_for(post[:created_at]) %></span></li>
   <% end %>
   </ul>
 
