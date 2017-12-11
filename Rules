@@ -31,4 +31,8 @@ compile '/**/*.{css,js}' do
   write item.identifier.to_s
 end
 
+compile '/static/**/*' do
+  write item.identifier.to_s
+end
+
 layout '/**/*', :erb
