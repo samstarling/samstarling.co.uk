@@ -10,9 +10,9 @@ compile '/til/**/*.html' do
   write item.identifier.without_ext + '/index.html'
 end
 
-compile '/**/*.erb' do
+compile '/*.erb' do
   filter :erb
-  layout '/default.*'
+  layout '/basic.*'
 end
 
 compile '/**/*.html' do
@@ -20,16 +20,11 @@ compile '/**/*.html' do
 end
 
 route '/**/*.{html,md,erb,html}' do
-
-  x = if item.identifier =~ '/index.*'
+  if item.identifier =~ '/index.*'
     '/index.html'
   else
     item.identifier.without_ext + '/index.html'
   end
-
-  puts [item, x].inspect
-
-  x
 end
 
 compile '/**/*.{css,js}' do
