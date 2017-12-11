@@ -1,68 +1,13 @@
-body {
-  max-width: 650px;
-  margin: 40px auto;
-  padding: 0 20px;
-  font-size: 18px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 a {
   text-decoration: none;
-  color: #5A7DC2;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #357edd;
+  color: #357edd;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #495456;
-  font-weight: 600;
+a:focus {
+  background: #eee;
 }
 
-h3, h4, h5, h6 {
-  font-weight: 700;
-}
-
-p, li {
-  line-height: 1.5;
-}
-
-li {
-  padding: 0.2em 0 0.25em 0;
-}
-
-.ProfileImage {
-  border-radius: 3px;
-  float: left;
-  padding-right: 0.9em;
-  padding-bottom: 0.9em;
-  width: 80px;
-  height: 80px;
-}
-
-.HomeHeading {
-  margin: 1em 0 -0.2em 0;
-}
-
-.PostList {
-
-}
-
-.PostList--date {
-  color: #aaa;
-  font-size: 0.85em;
-}
-
-.PostHeading {
-
-}
-
-.PostHeading--title {
-
-}
-
-.PostHeading--date {
-  color: #aaa;
-  margin: -1em 0 2em 0;
+a:hover {
+  border-bottom: none;
 }
