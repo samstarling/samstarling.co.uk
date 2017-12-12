@@ -1,12 +1,7 @@
 #!/usr/bin/env ruby
 
-compile '/posts/**/*.html' do
+compile '/{posts,til}/**/*.html' do
   layout '/post.*'
-  write item.identifier.without_ext + '/index.html'
-end
-
-compile '/til/**/*.html' do
-  layout '/til.*'
   write item.identifier.without_ext + '/index.html'
 end
 
@@ -16,7 +11,7 @@ compile '/*.erb' do
 end
 
 compile '/**/*.html' do
-  layout '/default.*'
+  layout '/basic.*'
 end
 
 route '/**/*.{html,md,erb,html}' do

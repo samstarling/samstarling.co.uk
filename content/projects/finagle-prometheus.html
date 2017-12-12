@@ -1,0 +1,11 @@
+---
+title: finagle-prometheus
+---
+
+<div class="f5 mt3 f4-ns lh-copy measure">
+  <a class="f6 link dim br2 ba ph3 pv2 mb2 dib blue" href="https://github.com/samstarling/finagle-prometheus/">View on GitHub &rarr;</a>
+  <p><code>finagle-prometheus</code> is a Scala library that exposes metrics from your <a href="https://twitter.github.io/finagle/">Finagle</a> application to <a href="https://prometheus.io/">Prometheus</a>.</p>
+  <p>There are two parts to it. The first is a component which reads Finagle's internal metrics, and converts these to the equivalent classes from Prometheus' <code>simpleclient</code> library. The second is a selection of <code>Filter</code> classes that can be added to clients, to expose additional custom metrics for those clients. These are currently focussed on HTTP clients.</p>
+  <p>Crucially, it also provides a handler that you can mount to an HTTP endpoint for Prometheus to scrape.</p>
+  <p>The GitHub repository includes <a href="https://github.com/samstarling/finagle-prometheus/blob/master/examples/src/main/scala/com/samstarling/prometheusfinagle/examples/TestServer.scala">an example</a> of how to use all of these things together.</p>
+</div>
