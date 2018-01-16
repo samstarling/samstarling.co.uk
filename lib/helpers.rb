@@ -6,6 +6,10 @@ def friendly_date_for(date)
   attribute_to_time(date).strftime("%-d %B %Y")
 end
 
+def latest_til
+  sorted_tils.first
+end
+
 def tils
   blk = -> { @items.select { |item| item[:kind] == 'til' } }
   if @items.frozen?
@@ -13,6 +17,12 @@ def tils
   else
     blk.call
   end
+end
+
+def article_list
+  @items.select { |item| item[:kind] == 'article' }
+    .sort_by { |a| attribute_to_time(a[:created_at]) }
+    .reverse
 end
 
 def sorted_tils
