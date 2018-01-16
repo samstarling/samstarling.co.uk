@@ -16,7 +16,7 @@
   <h2 class="f3">Latest posts</h2>
   <ul>
   <% article_list.each do |post| %>
-    <li><%= link_to(post[:title], post) %> <span class="black-40">&middot; <%= friendly_date_for(post[:created_at]) %></span></li>
+    <li class="mb1"><%= link_to(post[:title], post) %> <span class="black-40">&middot; <%= friendly_date_for(post[:created_at]) %></span></li>
   <% end %>
   </ul>
 </div>
