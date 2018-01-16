@@ -1,0 +1,15 @@
+---
+title: How nginx responds to 'unknown' domains
+created_at: 2017-12-08 00:00:00
+kind: til
+---
+
+<p>I run a few sites using <a href="https://www.nginx.com/">nginx</a>, and I run them all on the same Linode box. I recently realised that one of those sites was inexplicably being returned as the default for any domain that wasn't explicitly set up in nginx.</p>
+<p>Today I learned that nginx uses the first <tt>server</tt> block it comes across as the default. If (like me) you have your sites all defined in separate files, then this will end up being the first one in the list when those files are sorted alphabetically.</p>
+<p>I thought a default could be achieved by having an available site that had no <tt>server_name</tt> in the <tt>server</tt> block, but that's not the case. Instead, just have a site like this:</p>
+<pre class="code ba pv2 ph3 f5 b--black-20 black-60">server {
+  listen 80 default_server;
+  server_name _;
+  return 444;
+}</pre>
+<p>Returning <tt>444</tt> will mean that nginx just closes the connection. The <a href="http://nginx.org/en/docs/http/request_processing.html">request processing documentation</a> on the nginx site goes into much more detail on this.</p>
