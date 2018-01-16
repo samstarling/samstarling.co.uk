@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'nanoc'
+gem 'typogruby'
 
 group :nanoc do
   gem 'guard-nanoc'

@@ -61,9 +61,12 @@ GEM
       ffi (>= 0.5.0, < 2)
     ref (2.0.0)
     ruby_dep (1.5.0)
+    rubypants (0.6.0)
     shellany (0.0.1)
     slow_enumerator_tools (1.0.0)
     thor (0.20.0)
+    typogruby (1.0.18)
+      rubypants
 
 PLATFORMS
   ruby
@@ -73,6 +76,7 @@ DEPENDENCIES
   guard-nanoc
   mina
   nanoc
+  typogruby
 
 BUNDLED WITH
    1.16.0
