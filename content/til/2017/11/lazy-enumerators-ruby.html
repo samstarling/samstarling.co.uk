@@ -4,10 +4,10 @@ created_at: 2017-11-13 00:00:00
 kind: til
 ---
 
-<p>Since Ruby 2.0, <tt>Enumerator::Lazy</tt> has existed. It'll let you enumerate over a list of values, like this:</p>
+<p>Since Ruby 2.0, <code>Enumerator::Lazy</code> has existed. It'll let you enumerate over a list of values, like this:</p>
 <p><script src="https://gist.github.com/samstarling/d40fb8c6100bc5d0e2c48e4c11ff839e.js?file=lazy_1.rb"></script></p>
 
-<p>That's not so spectacular, though, and iterating over 10,000 values isn't particularly unusual. The <tt>#lazy</tt> method becomes really useful when we're dealing with huge enumerations:</p>
+<p>That's not so spectacular, though, and iterating over 10,000 values isn't particularly unusual. The <code>#lazy</code> method becomes really useful when we're dealing with huge enumerations:</p>
 <p><script src="https://gist.github.com/samstarling/d40fb8c6100bc5d0e2c48e4c11ff839e.js?file=lazy_2.rb"></script></p>
 
-<p>That first line never finishes, because <tt>#map</tt> can never finish iterating over the infinite range. So, if you're looking to work with a collection, but you don't need to access the whole thing at once, then <tt>#lazy</tt> is a good way forward. <a href="http://blog.honeybadger.io/using-lazy-enumerators-to-work-with-large-files-in-ruby/">Parsing huge files</a> is a nice example.</p>
+<p>That first line never finishes, because <code>#map</code> can never finish iterating over the infinite range. So, if you're looking to work with a collection, but you don't need to access the whole thing at once, then <code>#lazy</code> is a good way forward. <a href="http://blog.honeybadger.io/using-lazy-enumerators-to-work-with-large-files-in-ruby/">Parsing huge files</a> is a nice example.</p>

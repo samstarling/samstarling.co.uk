@@ -2,32 +2,36 @@
 
 compile '/{posts,til}/**/*.html' do
   layout '/post.*'
-  write item.identifier.without_ext + '/index.html'
+  filter :typogruby
 end
 
 compile '/*.erb' do
   filter :erb
   layout '/basic.*'
+  filter :typogruby
 end
 
 compile '/**/*.html' do
   layout '/basic.*'
 end
 
-route '/**/*.{html,md,erb,html}' do
-  if item.identifier =~ '/index.*'
-    '/index.html'
+compile '/static/**/*' do
+end
+
+route "/static/**/*" do
+  item.identifier.to_s
+end
+
+route '/index.erb' do
+  '/index.html'
+end
+
+route '/**/*' do
+  if item.binary?
+    item.identifier.chop + '.' + item[:extension]
   else
     item.identifier.without_ext + '/index.html'
   end
-end
-
-compile '/**/*.{css,js}' do
-  write item.identifier.to_s
-end
-
-compile '/static/**/*' do
-  write item.identifier.to_s
 end
 
 layout '/**/*', :erb
