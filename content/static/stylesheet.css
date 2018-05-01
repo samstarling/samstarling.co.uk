@@ -15,3 +15,11 @@ a:not(.link):hover {
 p code {
   font-size: 93%;
 }
+
+.logo--mbst {
+  background-color: #306;
+}
+
+.logo--kwara {
+  background-color: #5D555C;
+}
