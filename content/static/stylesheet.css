@@ -1,3 +1,9 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+
+.inter {
+  font-family: "Inter UI", sans-serif;
+}
+
 a:not(.link) {
   text-decoration: none;
   border-bottom: 1px solid #357edd;
@@ -21,5 +27,5 @@ p code {
 }
 
 .logo--kwara {
-  background-color: #5D555C;
+  background-color: #5d555c;
 }
