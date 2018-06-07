@@ -1,8 +1,8 @@
-<h1 class="f1 mb3">Sam Starling</h1>
+<h1 class="f2 f1-ns mb3">Sam Starling</h1>
 
 <div class="f5 f4-ns lh-copy measure">
   <div class="w-100 cf">
-    <div class="fl pr3 w-30">
+    <div class="fl pr3 w-30 mw5">
       <img class="w-100" src="https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=80" srcset="https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=80 1x, https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=160 2x, https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=240 3x" />
     </div>
     <div class="fl w-70">
@@ -16,7 +16,10 @@
   <h2 class="f3">Latest posts</h2>
   <ul>
   <% article_list.each do |post| %>
-    <li class="mb1"><%= link_to(post[:title], post) %> <span class="black-40">&middot; <%= friendly_date_for(post[:created_at]) %></span></li>
+    <li class="mb1">
+      <div><%= link_to(post[:title], post) %></div>
+      <div class="black-40 f6"><%= friendly_date_for(post[:created_at]) %></div>
+    </li>
   <% end %>
   </ul>
 </div>
