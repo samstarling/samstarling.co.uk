@@ -29,6 +29,7 @@ GEM
       nanoc (>= 4.3.8, < 5.0)
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
+    kramdown (1.17.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -74,9 +75,10 @@ PLATFORMS
 DEPENDENCIES
   adsf
   guard-nanoc
+  kramdown
   mina
   nanoc
   typogruby
 
 BUNDLED WITH
-   1.16.0
+   1.16.3

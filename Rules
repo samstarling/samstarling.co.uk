@@ -5,6 +5,12 @@ compile '/{posts,til}/**/*.html' do
   filter :typogruby
 end
 
+compile '/{posts,til}/**/*.md' do
+  filter :kramdown
+  layout '/post.*'
+  filter :typogruby
+end
+
 compile '/*.erb' do
   filter :erb
   layout '/basic.*'
