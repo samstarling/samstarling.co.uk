@@ -41,3 +41,11 @@ def title_tag item
     "Sam Starling"
   end
 end
+
+def nav_class path
+  if @item.path == path
+    "black-60" 
+  else
+    "black-20"
+  end
+end

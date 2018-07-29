@@ -10,21 +10,20 @@
     <meta name="google-site-verification" content="H_FiFYlDsR8MHqDJL9fFo06j_h0Wj4gzfTvxrFYTBYg" />
   </head>
   <body class="inter w-100 black-70">
-    <nav class="bb b--black-10 bg-near-white">
-      <div class="pa3 ph5-ns f6">
-        <a href="/">Home</a>
-        <span class="mr1 ml1">&middot;</span>
-        <a href="/about">About</a>
-        <span class="mr1 ml1">&middot;</span>
-        <a href="/projects">Projects</a>
-        <span class="mr1 ml1">&middot;</span>
-        <a href="/til">TIL</a>
-        <a class="fr" href="https://twitter.com/samstarling">Twitter</a>
+    <nav class="">
+      <div class="pa3 pt4-ns ph5-ns f4">
+        <a class="no-underline mr2 b bb <%= nav_class '/' %>" href="/">Home</a>
+        <a class="no-underline mr2 b bb <%= nav_class '/about/' %>" href="/about">About</a>
+        <a class="no-underline mr2 b bb <%= nav_class '/projects/' %>" href="/projects">Projects</a>
+        <a class="no-underline b bb <%= nav_class '/til/' %>" href="/til">TIL</a>
       </div>
     </nav>
-    <div class="pa3 pb5-ns ph5-ns">
+    <div id="main" class="pa3 pb5-ns ph5-ns">
       <%= yield %>
     </div>
+    <footer class="pa3 pt4-ns ph5-ns bt black-10">
+      <a href="https://twitter.com/samstarling">Twitter</a>
+    </footer>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109282190-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

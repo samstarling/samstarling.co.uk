@@ -4,17 +4,17 @@
   font-family: "Inter UI", sans-serif;
 }
 
-p a:not(.link) {
+#main a {
   text-decoration: none;
   border-bottom: 1px solid #357edd;
   color: #357edd;
 }
 
-a:not(.link):focus {
+#main a:focus {
   background: #eee;
 }
 
-a:not(.link):hover {
+#main a:hover {
   border-bottom: none;
 }
 
