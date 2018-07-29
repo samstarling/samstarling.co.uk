@@ -11,7 +11,7 @@ I've been working as a freelancer since January of this year. Making the switch 
 
 As a freelancer, there are _two_ tax IDs that you'll need. The first is your _Steueridentifikationsnummer_, which never changes, and which you will get when you register in Germany. The second is your _Steuernummer_, which can change. There's [a blog post from Holvi](https://blog.holvi.com/expats-guide-finanzamt-steuernummer-vs-steuer-id) which explains the difference better than I can.
 
-Next, there's the _Umsatzsteuer&shy;identifikations&shy;nummer_, or VAT number. You'll have to charge German clients VAT, and include your VAT number on your invoices. For clients in the EU, you don't have to charge VAT, but you do have to include <i>their</i> VAT number on your invoices. VAT is complicated, and [this Medium post](https://medium.com/@ordeconta/small-business-in-germany-and-vat-ae42b70a073c) does a good job of outlining some of the finer points.
+Next, there's the _Umsatz&shy;steuer&shy;identifikations&shy;nummer_, or VAT number. You'll have to charge German clients VAT, and include your VAT number on your invoices. For clients in the EU, you don't have to charge VAT, but you do have to include <i>their</i> VAT number on your invoices. VAT is complicated, and [this Medium post](https://medium.com/@ordeconta/small-business-in-germany-and-vat-ae42b70a073c) does a good job of outlining some of the finer points.
 
 You'll get the _Steuernummer_ and the VAT number from the Finanzamt when you register as freelance – the registration form is the ["Fragebogen zur steuerlichen Erfassung"](http://www.berlin.de/sen/finanzen/dokumentendownload/steuern/daten-und-fakten/betriebseroeffnung-betriebseinstellung/steuerliche_erfassung_selbst__ndige_t__tigkeit_beteiligung_an_einer_personenges.pdf).
 
@@ -41,4 +41,5 @@ There are other topics you'll need to think about as well: finding work, health 
 {: .f3}
 
 * [Freelancers - Getting Started, Registration &amp; Tax Necessities](https://kontist.com/posts/freelancer-registration-tax) by Kontist, who have a lot of good blog posts on many freelance-related topics.
+{: .mb2}
 * [Expath](https://www.expath.de) help new arrivals in Berlin with a range of topics. I found the paid-for video workshops on freelancing useful at the beginning.
