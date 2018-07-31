@@ -25,6 +25,13 @@ The fun bit: sending an invoice so that people can pay you. Some specific inform
 
 I use [Debitoor](http://debitoor.com) for everything. It produces invoices, tracks expenses, and helps me to keep everything in once place. For my business bank account, I use [Kontist](http://kontist.com). One big advantage is that the two can be linked together, allowing invoices to be marked as paid automatically, and making expense tracking easier.
 
+### Accountants
+{: .f3}
+
+A good accountant is a good investment. Find one that can do your monthly accounting as well as your tax return. Mine also handled my registration. I've struggled to find someone who'll work electronically. If you're looking for someone tech-savvy, then Debitoor maintain a list of [accountants who work with them](https://debitoor.de/steuerberaterliste). I can't vouch for any of them.
+
+If you can get a recommendation from a friend: brilliant. If not, go and meet a couple and see which one you get on with the best. (Sorry that this section isn't more helpful.)
+
 ### Taxes
 {: .f3}
 
