@@ -28,7 +28,7 @@ I use [Debitoor](http://debitoor.com) for everything. It produces invoices, trac
 ### Accountants
 {: .f3}
 
-A good accountant is a good investment. Find one that can do your monthly accounting as well as your tax return. Mine also handled my registration. I've struggled to find someone who'll work electronically. If you're looking for someone tech-savvy, then Debitoor maintain a list of [accountants who work with them](https://debitoor.de/steuerberaterliste). I can't vouch for any of them.
+A good accountant is a big help. Find one that can do your monthly accounting as well as your tax return. Mine also handled my registration. I've struggled to find someone who'll work electronically. If you're looking for someone tech-savvy, then Debitoor maintain a list of [accountants who work with them](https://debitoor.de/steuerberaterliste). I can't vouch for any of them.
 
 If you can get a recommendation from a friend: brilliant. If not, go and meet a couple and see which one you get on with the best. (Sorry that this section isn't more helpful.)
 
@@ -42,7 +42,7 @@ Tax returns are submitted annually, and you also pay tax annually. For VAT, the 
 ### Everything else
 {: .f3}
 
-There are other topics you'll need to think about as well: finding work, health insurance, a pension, visas, other insurances... Those aren't covered here, but I'll try and cover them in a future post.
+There are other topics you'll need to think about as well: finding work, health insurance, expenses, pensions, visas, contracts, insurances... Those aren't covered here, but I might dedicate a future post to them.
 
 ### Resources
 {: .f3}

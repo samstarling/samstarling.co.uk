@@ -1,4 +1,8 @@
 <% render '/_base.*' do %>
-  <h1 class="f2 f1-ns mb1"><%= item[:title] %></h1>
-  <%= yield %>
+  <% if item[:title] %>
+    <h1 class="f2 f1-ns mb1"><%= item[:title] %></h1>
+  <% end %>
+  <article>
+    <%= yield %>
+  </article>
 <% end %>

@@ -10,17 +10,17 @@
     <meta name="google-site-verification" content="H_FiFYlDsR8MHqDJL9fFo06j_h0Wj4gzfTvxrFYTBYg" />
   </head>
   <body class="inter w-100 black-70">
-    <nav class="">
-      <div class="pa3 pt4-ns ph5-ns f4">
-        <a class="no-underline mr2 b bb <%= nav_class '/' %>" href="/">Home</a>
-        <a class="no-underline mr2 b bb <%= nav_class '/about/' %>" href="/about">About</a>
-        <a class="no-underline mr2 b bb <%= nav_class '/projects/' %>" href="/projects">Projects</a>
-        <a class="no-underline b bb <%= nav_class '/til/' %>" href="/til">TIL</a>
-      </div>
+    <nav class="pa3 pt4-ns ph5-ns f4">
+      <ul class="pa0 list">
+        <li class="fl"><a class="no-underline mr2 b bb <%= nav_class '/' %>" href="/">Home</a></li>
+        <li class="fl"><a class="no-underline mr2 b bb <%= nav_class '/about/' %>" href="/about">About</a></li>
+        <li class="fl"><a class="no-underline mr2 b bb <%= nav_class '/projects/' %>" href="/projects">Projects</a></li>
+        <li class="fl"><a class="no-underline b bb <%= nav_class '/til/' %>" href="/til">TIL</a></li>
+      </ul>
     </nav>
-    <div id="main" class="pa3 pb5-ns ph5-ns">
+    <main class="pa3 pb5-ns ph5-ns">
       <%= yield %>
-    </div>
+    </main>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109282190-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
