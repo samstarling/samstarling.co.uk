@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'nanoc'
+gem 'nanoc', '4.10.3'
 gem 'typogruby'
 gem 'kramdown'
+gem 'nokogiri'
 
 group :nanoc do
   gem 'guard-nanoc'

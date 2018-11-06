@@ -6,6 +6,7 @@ compile '/{posts,til}/**/*.html' do
 end
 
 compile '/{posts,til}/**/*.md' do
+  filter :colorize_syntax
   filter :kramdown
   layout '/post.*'
   filter :typogruby
