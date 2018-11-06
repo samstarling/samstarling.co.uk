@@ -4,7 +4,7 @@ created_at: 2018-11-03 00:00:00
 kind: article
 ---
 
-I've using React a lot on some recent projects, and I've been enjoying it. The surrounding community and range of libraries on offer is (unsurprisingly) great, and if you're building a common component then it's often easy to find a well-documented open source version of what you're about to build.
+I've been using React a lot on some recent projects, and enjoying it. The surrounding community and range of libraries on offer is (unsurprisingly) great, and if you're building a common component then it's often easy to find a well-documented open source version of what you're about to build.
 
 One tool I can no longer live without is [Flow][flow], a static type checker. It helps me spot errors with passing objects that might be incompatible, accessing variables that might not exist, and a whole host of other common pitfalls.
 
