@@ -10,17 +10,22 @@
     <meta name="google-site-verification" content="H_FiFYlDsR8MHqDJL9fFo06j_h0Wj4gzfTvxrFYTBYg" />
   </head>
   <body class="inter w-100 black-70">
-    <nav class="pa3 pt4-ns ph5-ns f4">
-      <ul class="pa0 list flex items-center">
-        <li class="mr3"><img height="50" class="br-100" src="https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=320"/></li>
-        <li>Sam Starling</li>
-        <li class="ph2">&middot;</li>
-        <li class="mr3"><a class="no-underline b bb <%= nav_class '/' %>" href="/">Home</a></li>
-        <li class="mr3"><a class="no-underline b bb <%= nav_class '/about/' %>" href="/about">About</a></li>
-        <li class="mr3"><a class="no-underline b bb <%= nav_class '/projects/' %>" href="/projects">Projects</a></li>
-        <li><a class="no-underline b bb <%= nav_class '/til/' %>" href="/til">TIL</a></li>
-      </ul>
-    </nav>
+  <div class="pa3 pb5-ns ph5-ns">
+    <header class="flex items-center pt4">
+      <img height="70" width="70" class="br-100 mr3" src="https://secure.gravatar.com/avatar/5b5cd42baeac57dd9eda6d86689df9db?s=320"/>
+      <div>
+        <h1 class="ma0 pa0 f4 pb1">Sam Starling</h1>
+        <nav>
+          <ul class="ma0 pa0 list flex items-center">
+            <li class="mr3"><a class="no-underline b bb <%= nav_class '/' %>" href="/">Home</a></li>
+            <li class="mr3"><a class="no-underline b bb <%= nav_class '/about/' %>" href="/about">About</a></li>
+            <li class="mr3"><a class="no-underline b bb <%= nav_class '/projects/' %>" href="/projects">Projects</a></li>
+            <li><a class="no-underline b bb <%= nav_class '/til/' %>" href="/til">TIL</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    </div>
     <main class="pa3 pb5-ns ph5-ns">
       <%= yield %>
     </main>
