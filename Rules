@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 compile '/{posts,til}/**/*.html' do
   layout '/post.*'
@@ -10,6 +11,10 @@ compile '/{posts,til}/**/*.md' do
   filter :kramdown
   layout '/post.*'
   filter :typogruby
+end
+
+compile '/_redirects' do
+  item.identifier.to_s
 end
 
 compile '/*.erb' do
@@ -25,12 +30,16 @@ end
 compile '/static/**/*' do
 end
 
-route "/static/**/*" do
+route '/static/**/*' do
   item.identifier.to_s
 end
 
 route '/index.erb' do
   '/index.html'
+end
+
+route '/_redirects' do
+  '/_redirects'
 end
 
 route '/**/*' do
