@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'nanoc', '4.10.3'
+gem 'nanoc', '4.11.8'
 gem 'typogruby'
 gem 'kramdown'
 gem 'nokogiri'
